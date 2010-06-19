@@ -24,11 +24,11 @@ SYNOPSIS
         package TestApp::Controller::Test;
 
         .........
-            # these two calss are the same
+            # these two calls are the same
             my $s = $c->model('DB')->schema;
             my $s = $c->db_schema;
         .........
-            # these two calss are the same
+            # these two calls are the same
             my $rs = $c->model('DB::Actor');
             my $rs = $c->db_actor_rs;
         .........
@@ -57,22 +57,12 @@ DESCRIPTION
             $c->model('DB::Track')          ==>     $c->db_track_rs
             $c->model('DBIC::DB1::Actor')   ==>     $c->dbic_db1_actor_rs
 
+GIT REPOSITORY
+    git clone
+    git://github.com/cub-uanic/Catalyst-TraitFor-Model-DBIC-Shortcut.git
+
 SEE ALSO
     Catalyst, DBIx::Class, Moose
-
-SUPPORT
-    *   Report bugs or feature requests
-
-        <http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Catalyst-TraitFor-Mo
-        del-DBIC-Shortcut>
-
-        <http://www.assembla.com/spaces/Catalyst-TraitFor-Model-DBIC-Shortcu
-        t/tickets>
-
-    *   Git repository
-
-        git clone
-        git://git.assembla.com/Catalyst-TraitFor-Model-DBIC-Shortcut.git
 
 AUTHOR
     Oleg Kostyuk, "<cub#cpan.org>"

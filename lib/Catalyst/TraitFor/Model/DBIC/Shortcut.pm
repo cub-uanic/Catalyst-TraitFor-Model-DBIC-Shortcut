@@ -35,11 +35,11 @@ our $VERSION = '0.01';
     package TestApp::Controller::Test;
 
     .........
-        # these two calss are the same
+        # these two calls are the same
         my $s = $c->model('DB')->schema;
         my $s = $c->db_schema;
     .........
-        # these two calss are the same
+        # these two calls are the same
         my $rs = $c->model('DB::Actor');
         my $rs = $c->db_actor_rs;
     .........
@@ -111,25 +111,13 @@ after 'setup_finalize' => sub {
 
 __PACKAGE__->meta->make_immutable();
 
+=head1 GIT REPOSITORY
+
+git clone git://github.com/cub-uanic/Catalyst-TraitFor-Model-DBIC-Shortcut.git
+
 =head1 SEE ALSO
 
 L<Catalyst>, L<DBIx::Class>, L<Moose>
-
-=head1 SUPPORT
-
-=over 4
-
-=item * Report bugs or feature requests
-
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Catalyst-TraitFor-Model-DBIC-Shortcut>
-
-L<http://www.assembla.com/spaces/Catalyst-TraitFor-Model-DBIC-Shortcut/tickets>
-
-=item * Git repository
-
-git clone git://git.assembla.com/Catalyst-TraitFor-Model-DBIC-Shortcut.git
-
-=back
 
 =head1 AUTHOR
 

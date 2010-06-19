@@ -1,5 +1,9 @@
 Revision history for Catalyst-TraitFor-Model-DBIC-Shortcut
 
+0.02    2010-06-20 02:08:12
+        Switch repository back to Github
+        Small spelling corrections
+
 0.01    2010-02-08 17:57:40
         First version, released on an unsuspecting world :)
 
